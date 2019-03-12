@@ -1,0 +1,9 @@
+---
+- name: Create KOMPOSE directory
+  file: path=/opt/kompose/ state=directory mode="a+rw"
+
+- name: Get KOMPOSE.
+  get_url:
+    url: https://github.com/kubernetes/kompose/releases/download/{{ kompose_version }}/kompose-linux-amd64
+    dest: "/opt/kompose/"
+    mode: 0755

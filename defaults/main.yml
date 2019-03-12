@@ -1,0 +1,4 @@
+---
+# defaults file for kompose-converter
+
+kompose_version: "v1.18.0"
